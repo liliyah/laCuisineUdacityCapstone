@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/linerlayout_weight"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/recipeImageView"
+                android:layout_width="match_parent"
+                android:contentDescription="@string/Recipemage"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/List_view_weight"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/List_view_weight"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lvIngredients"
+                    android:contentDescription="@string/ingredientLines"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ListViewLayout_height"
+                    android:background="@color/colorPrimaryLight" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/fragment_linearlayout_weight"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/fragment_linearlayout_padding">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="560dp"
+                android:layout_height="@dimen/linearlayout_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recipeNameTextView"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipeName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/TextView_View_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvServingsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/tvServingsOutput"
+                        android:text="@string/servings"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvServingsOutput"
+                        android:contentDescription="@string/RecipeServings"
+                        android:nextFocusDown="@+id/tvPreptimeTitle"
+                        android:layout_width="@dimen/recipefragmenttext_layout_width"
+                        android:layout_height="@dimen/recipefragmenttext_layout_height"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPreptimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/tvPreptimeOutput"
+                        android:text="@string/Preptime"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPreptimeOutput"
+                        android:layout_width="@dimen/recipefragmenttext_layout_width"
+                        android:layout_height="@dimen/recipefragmenttext_layout_height"
+                        android:nextFocusDown="@+id/tvCalsListItem"
+                        android:gravity="center"
+                        android:contentDescription="@string/RecipeTimePreparation"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCalsListItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/caloriesTextView"
+                        android:text="@string/calories"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/caloriesTextView"
+                        android:layout_width="@dimen/recipefragmenttext_layout_width"
+                        android:layout_height="@dimen/recipefragmenttext_layout_height"
+                        android:nextFocusDown="@+id/tvCautionsTitle"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="326dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCautionsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/tvCautionsOutput"
+                        android:text="@string/healthLabels"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCautionsOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:scrollbars="vertical"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/fragment_thirdtextview_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+</ScrollView>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/saveRecipeButton"
+            android:layout_width="@dimen/zero_height"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/ButtonlayoutWeight"
+            android:background="@color/colorAccent"
+            android:text="@string/saverecipe"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="@dimen/ButtonTextSize" />
+
+    <Button
+        android:id="@+id/WidgetButton"
+        android:layout_width="218dp"
+        android:layout_height="@dimen/Buttonlayoutheight"
+        android:background="@color/colorAccent"
+        android:text="@string/add_widget"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="@dimen/ButtonTextSize"
+
+        />
+    <TextView
+        android:id="@+id/sourceTextView"
+        android:nextFocusUp="@+id/WidgetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/accessibliitynFullRecipe"
+        android:background="@color/colorPrimaryLight"
+        android:drawableStart="@drawable/ic_subject_white_24dp"
+        android:drawablePadding="@dimen/drawble_padding"
+        android:gravity="center_vertical"
+        android:text="@string/recipeUrl"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/fragment_thirdtextview_size"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

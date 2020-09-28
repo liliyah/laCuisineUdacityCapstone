@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/Image_View_Layout_Width"
+        android:layout_height="@dimen/Image_View_height"
+        android:id="@+id/recipeImageView"
+        android:contentDescription="@string/recipeImgDesc"
+        android:src="@drawable/account_settings"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/linear_padding">
+
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TextView_View_size"
+            android:textStyle="bold"
+            android:text="@string/recipeName"
+            android:textColorHighlight="@color/colorPrimaryText"
+            android:textColor="@color/colorTextIcons"/>
+
+
+    </LinearLayout>
+</LinearLayout>

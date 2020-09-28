@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "577590932888",
+    "firebase_url": "https://newcuisine-b1738.firebaseio.com",
+    "project_id": "newcuisine-b1738",
+    "storage_bucket": "newcuisine-b1738.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577590932888:android:043cc3cdf3f21ff3",
+        "android_client_info": {
+          "package_name": "com.example.attar.lacuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577590932888-pvu0u8ar5mrqtsbu35pel8j7582ikspk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attar.lacuisine",
+            "certificate_hash": "105574114a0e8445a275cdfc21f09d35af2ee487"
+          }
+        },
+        {
+          "client_id": "577590932888-ulfb9017mj3gjemsbo3s6el9uu7kglcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_QGtQHr2u3XbHlSoS83qBB8d2vzLG6eQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577590932888-ulfb9017mj3gjemsbo3s6el9uu7kglcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

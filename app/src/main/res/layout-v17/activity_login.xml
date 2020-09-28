@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_margintop"
+        android:autofillHints="@string/login"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/login_textsize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:nextFocusForward="@+id/passwordEditText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/Contentmain_marginstart"
+        android:layout_marginStart="@dimen/Contentmain_marginstart"
+        android:layout_marginTop="@dimen/login_layoutmargintop"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/passwordEditText"
+        android:padding="@dimen/login_padding"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="@dimen/login_edittextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/Text_Create_EditText_layoutmargintop"
+        android:layout_marginStart="@dimen/Text_Create_EditText_layoutmargintop"
+        android:layout_marginTop="@dimen/Text_Create_EditText_layoutmargintop"
+        android:autofillHints="@string/password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:nextFocusDown="@+id/passwordLoginButton"
+        android:padding="@dimen/Text_Create_EditText_padding"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="@dimen/Text_Create_EditText_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+
+    <Button
+        android:id="@+id/passwordLoginButton"
+        android:nextFocusForward="@+id/registerTextView"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/accessibliityPressToLogin"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/Text_Create_EditText_layoutmargintop"
+        android:layout_marginStart="@dimen/Text_Create_EditText_layoutmargintop"
+        android:layout_marginTop="@dimen/Text_Create_EditText_layoutmargintop"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/login_padding"
+        android:text="@string/login"
+        android:textColor="@color/colorTextIcons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:nextFocusUp="@+id/passwordLoginButton"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/accessibliitynewaccount"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/Text_Create_EditText_layoutmargintop"
+        android:layout_marginTop="@dimen/Text_Create_EditText_layoutmargintop"
+        android:text="@string/no_account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/ButtonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginButton"
+        app:layout_constraintVertical_bias="0.111" />
+</android.support.constraint.ConstraintLayout>

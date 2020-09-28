@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.attar.lacuisine.ui.EdamamSearchActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/backgroundimage"
+        android:id="@+id/imageView"
+        android:src="@drawable/searchbg"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/SearchTxt"
+            android:layout_width="@dimen/EditTxtWidth"
+            android:inputType="text"
+          android:textColorHighlight="@color/colorTextIcons"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/hinttypeyourrecipe"
+            android:hint="@string/hinttypeyourrecipe"
+            android:textColorHint="@color/colorPrimaryText"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"
+            android:textSize="@dimen/ButtonTextSize"
+
+
+            />
+
+        <Button
+            android:id="@+id/SearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/buttonpinkbg"
+            android:contentDescription="@string/presstogetrecipe"
+            android:text="@string/Search"
+            android:textColor="@color/colorTextIcons"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvApiRecipesList"
+        android:layout_width="338dp"
+        android:contentDescription="@string/recipes"
+        android:layout_height="415dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>

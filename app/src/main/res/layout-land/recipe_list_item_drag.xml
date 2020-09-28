@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="@dimen/Image_View_Layout_Width"
+            android:layout_height="@dimen/Image_View_height"
+            android:contentDescription="@string/Recipemage"
+            android:id="@+id/recipeImageView"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/dragIcon"
+            android:layout_width="@dimen/Image_View_Width"
+            android:contentDescription="@string/Recipemage"
+            android:layout_height="@dimen/Image_View_Width"
+            android:gravity="bottom|start"
+            android:src="@drawable/ic_reorder_white_24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipeNameTextView"
+            android:textSize="@dimen/land_text_size"
+            android:text="@string/recipeName"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+</LinearLayout>
