@@ -1,5 +1,5 @@
 # laCuisineUdacityCapstone
-udacity nanodegree capstopne project
+udacity nanodegree capstopne project file
 Displays a variety of delicious recipes
 
 ![mainscreen](https://user-images.githubusercontent.com/41235606/94429247-58b45b80-0192-11eb-8bee-e608b1fc8100.jpg)
